@@ -1,0 +1,246 @@
+@import "variables";
+
+.header-7 {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 95.36px!important;
+    line-height: 110%!important;
+    /* or 105px */
+    letter-spacing: -0.02em!important;
+}
+
+.header-6 {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 76.288px!important;
+    line-height: 110%!important;
+    /* or 84px */
+    letter-spacing: -0.02em!important;
+}
+
+.header-5 {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 61.04px!important;
+    line-height: 110%!important;
+    /* or 67px */
+    letter-spacing: -0.02em!important;
+}
+
+
+
+.header-4 {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 48.832px!important;
+    line-height: 110%!important;
+    /* or 54px */
+    
+    letter-spacing: -0.02em!important;
+}
+
+.header-3 {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 39.056px!important;
+    line-height: 110%!important;
+    /* or 43px */
+    
+    letter-spacing: -0.02em!important;
+}
+
+.header-2 {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 31.248px!important;
+    line-height: 120%!important;
+    /* or 37px */
+}
+
+.header-xl {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 25.008px!important;
+    line-height: 120%!important;
+    /* or 37px */
+}
+
+.header-lg {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 20px!important;
+    line-height: 120%!important;
+}
+
+.header-base {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 16px!important;
+    line-height: 120%!important;
+}
+
+.header-base-custom {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 12.8px!important;
+    line-height: 120%!important;
+}
+
+
+.header-sm {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 12.8px!important;
+    line-height: 120%!important;
+}
+
+.header-xs {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 10.24px!important;
+    line-height: 12px!important;
+}
+.button-sm {
+    font-family: $custom-heading-font-family!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 10.02px!important;
+    line-height: 16px!important;
+}
+
+
+//body 
+
+.body-base {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 16px!important;
+    line-height: 26px!important;
+}
+
+.body-sm {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 12.8px!important;
+    line-height: 20px!important;
+}
+.body-sx {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 12.8px!important;
+    line-height: 20px!important;
+}
+
+.body-xs {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 10.24px!important;
+    line-height: 16px!important;
+}
+
+.subtitle-xl {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 25.008px!important;
+    line-height: 40px!important;
+}
+.subtitle-lg {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 20px!important;
+    line-height: 32px!important;
+}
+
+.subtitle-base {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 16px!important;
+    line-height: 26px!important;
+}
+
+
+.button-text-lg {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 12.8px!important;
+    line-height: 16px!important;
+}
+
+
+.button-text-bold {
+    font-family: $custom-heading-font-family !important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 12.8px!important;
+    line-height: 16px!important;
+}
+
+
+
+.button-text-sm {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 600!important;
+    font-size: 10.02px!important;
+    line-height: 16px!important;
+}
+.button-text-base {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    font-size: 16px!important;
+    line-height: 26px!important;
+}
+
+.badge-text-base {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 10.24px!important;
+    line-height: 10px!important;
+}
+.badge-text-md {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 10.24px!important;
+    line-height: 16px!important;
+}
+
+.badge-text-lg {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 12.8px!important;
+    line-height: 13px !important;
+}
+.placeholder-text {
+    font-family: $custom-font-family !important;
+    font-style: normal!important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+
+// additional typography

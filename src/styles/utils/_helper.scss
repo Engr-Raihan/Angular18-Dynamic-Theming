@@ -1,0 +1,38 @@
+@for $i from 8 through 40 {
+    .font-size-#{$i} {font-size: #{$i}px !important}
+}
+
+@for $i from 1 through 9 {
+    .font-weight-#{$i * 100}i {font-weight: $i * 100 !important}
+}
+
+@for $i from 0 through 20 {
+    .opacity-#{$i * 5} {opacity: $i * 5 !important}
+}
+
+@for $i from 0 through 20 {
+    .z-#{$i * 5} {z-index: $i * 5 !important}
+}
+
+@for $i from 0 through 25 {
+  .m-#{$i * 4} {margin: #{$i * 4}px;}
+  .mt-#{$i * 4} {margin-top: #{$i * 4}px;}
+  .mb-#{$i * 4} {margin-bottom: #{$i * 4}px;}
+  .mr-#{$i * 4} {margin-right: #{$i * 4}px;}
+  .ml-#{$i * 4} {margin-left: #{$i * 4}px;}
+  .my-#{$i * 4} {margin-top: #{$i * 4}px; margin-bottom: #{$i * 4}px;}
+  .mx-#{$i * 4} {margin-right: #{$i * 4}px; margin-left: #{$i * 4}px;}
+
+  .p-#{$i * 4} {margin: #{$i * 4}px;}
+  .pt-#{$i * 4} {margin-top: #{$i * 4}px;}
+  .pb-#{$i * 4} {margin-bottom: #{$i * 4}px;}
+  .pr-#{$i * 4} {margin-right: #{$i * 4}px;}
+  .pl-#{$i * 4} {margin-left: #{$i * 4}px;}
+  .py-#{$i * 4} {margin-top: #{$i * 4}px; margin-bottom: #{$i * 4}px;}
+  .px-#{$i * 4} {margin-right: #{$i * 4}px; margin-left: #{$i * 4}px;}
+
+  //.w-min-#{$i * 4} {min-width: #{$i * 4}px}
+  //.w-max-#{$i * 4} {max-width: #{$i * 4}px}
+  //.h-min-#{$i * 4} {min-height: #{$i * 4}px}
+  //.h-max-#{$i * 4} {max-height: #{$i * 4}px}
+}

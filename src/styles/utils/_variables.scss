@@ -1,0 +1,28 @@
+//$bs-accent-A100: #ffffff;
+//$base-black-color: #000000;
+//$custom-black-color: #262626;
+$custom-font-family: "Futura Bk BT Book";
+$custom-heading-font-family: "Futura Std" ;
+$custom-white-color: #FFFFFF;
+//$mat-bs-primary: red;
+//$warn-color: #e57b05;
+//$black-color: #000000;
+//$white-color: #ffffff;
+
+//$dark-primary-text: #333333;
+//$light-primary-text: #aaa;
+
+$primary-color: var(--primary-color);
+$secondary-color:var(--secondary-color);
+
+$primary-color-light: var(--theme-primary-200);
+$primary-color-light-50: var(--theme-primary-50);
+$primary-color-light-100: var(--theme-primary-100);
+
+$button-hover-color: var(--theme-primary-700);
+
+$loginPageBgImage: var(--login-page-bg);
+$loginPageBgImageSize: var(--login-page-img-size);
+$loginSidebar: var(--login-page-sidebar);
+$loginPageBgColor: var(--login-page-bgColor);
+
