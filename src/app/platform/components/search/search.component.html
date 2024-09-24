@@ -1,0 +1,54 @@
+<div fxLayout="column" fxFlex="100" style="position: relative">
+  <mat-form-field fxFlex="100" appearance="outline" style="margin-bottom: -1.25em">
+    <mat-icon class="search-icon" color="primary" matPrefix>search</mat-icon>
+    <mat-label>{{ 'Search Here' }}</mat-label>
+    <input matInput/>
+    <button matSuffix mat-icon-button class="search-filter" (click)="onClose(); $event.stopPropagation()">
+      <mat-icon color="primary">tune</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <div [ngStyle]="{display: showing ? 'block' : 'none'}" class="search-filter-dropdown">
+    <div fxLayout="column" >
+      <section title="popular store" fxLayout="column" >
+        <p style="color: #333">popular store</p>
+        <div fxLayout="row wrap">
+          <a *ngFor="let store of stores" [href]="store.displayUrl" style="border-radius: 2rem; border: 1px solid #ebebeb; margin: .5rem" fxLayout="row" fxLayoutAlign="start center" fxFlex="0 0 18">
+            <img [src]="store.logo" alt="logo" class="store-logo" style="max-width: 3rem; border-radius: 50%; border: 1px solid #ebebeb">
+            <div fxLayout="column">
+              <p style="font-size: 1.2rem; color: black; margin: 0 .5rem; max-width: 80px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis">{{ store.name }}</p>
+              <p style="font-size: .8rem; color: black; margin: 0 .5rem">{{ store.numGreenCodes + ' codes'}}</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section title="hot coupons" style="padding: 2rem 0">
+        <p style="color: #333">hot coupons</p>
+        <div fxLayout="row wrap">
+          <a *ngFor="let coupon of coupons" [href]="coupon.displayUrl" style="border-radius: 2rem; border: 1px solid #ebebeb; margin: .5rem" fxLayout="row" fxLayoutAlign="start center" fxFlex="0 0 18">
+            <img [src]="coupon.logo" alt="logo" class="store-logo" style="max-width: 3rem; border-radius: 50%; border: 1px solid #ebebeb">
+            <div fxLayout="column">
+              <p style="font-size: 1.2rem; color: black; margin: 0 .5rem; max-width: 80px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis">{{ coupon.name }}</p>
+              <p style="font-size: .8rem; color: black; margin: 0 .5rem">{{ coupon.bestCode.percentOff + '% Off'}}</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section title="recent search">
+        <p style="color: #333">trading category</p>
+        <div fxLayout="row wrap">
+          <a *ngFor="let coupon of coupons" [href]="coupon.displayUrl" style="border-radius: 2rem; border: 1px solid #ebebeb; margin: .5rem" fxLayout="row" fxLayoutAlign="start center" fxFlex="0 0 18">
+            <mat-icon class="search-icon">search</mat-icon>
+            <span>{{coupon.l1Category.parent_name}}</span>
+          </a>
+        </div>
+      </section>
+    </div>
+<!--    <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="24px">-->
+<!--      <button (click)="onReset()" [disabled]="loading" mat-button type="button">{{'RESET'}}</button>-->
+<!--      <mat-spinner *ngIf="loading" diameter="30"></mat-spinner>-->
+<!--      <button (click)="onSubmit()" [disabled]="loading" mat-button type="submit">{{'APPLY'}}</button>-->
+<!--    </div>-->
+  </div>
+</div>
+<div *ngIf="showing" class="background" role="button" tabindex="0" (click)="onClose()" (keyup)="onClose()"></div>

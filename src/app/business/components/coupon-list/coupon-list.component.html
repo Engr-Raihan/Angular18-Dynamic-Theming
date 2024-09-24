@@ -1,0 +1,50 @@
+<main title="main container">
+  <section title="hero" *ngFor="let store of store_list">
+    <mat-grid-list [cols]="breakpoint" rowHeight="5:4">
+      <mat-grid-tile>
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <img class="logo-img" [src]="store.logo" alt="logo">
+          <h3 class="text-center">{{store.bestCode.title}}</h3>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img class="feature-img" [src]="store.featuredImage" alt="featuredImage">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </section>
+
+  <section class="review" title="review" fxLayout="column" fxLayoutAlign="center center">
+    <div aria-label="review icon" aria-hidden="true">
+      <mat-icon class="review-icon">star</mat-icon>
+      <mat-icon class="review-icon">star</mat-icon>
+      <mat-icon class="review-icon">star</mat-icon>
+      <mat-icon class="review-icon">star</mat-icon>
+      <mat-icon class="review-icon">star</mat-icon>
+    </div>
+    <h2 style="margin: 1.5rem"> 5 Star Reviews </h2>
+    <app-slider style="margin: 2rem"></app-slider>
+  </section>
+
+  <section class="extension" title="extension" fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="2.5%">
+      <ng-container *ngFor="let card of card_list">
+        <app-coupon-card [review]="card"></app-coupon-card>
+      </ng-container>
+    </div>
+  </section>
+
+  <section title="hero" *ngFor="let store of store_list2">
+    <mat-grid-list [cols]="breakpoint" rowHeight="5:4">
+      <mat-grid-tile>
+        <img class="feature-img" [src]="store.featuredImage" alt="featuredImage">
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <img class="logo-img" [src]="store.logo" alt="logo">
+          <h3 class="text-center">{{store.bestCode.title}}</h3>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </section>
+</main>
+

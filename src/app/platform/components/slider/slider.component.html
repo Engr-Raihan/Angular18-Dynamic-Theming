@@ -1,0 +1,14 @@
+<section>
+  <div fxLayout="column" fxLayoutAlign="center center" *ngFor="let review of reviews; let i = index">
+    @if (selected === i){
+      <p class="text-center" style="font-weight: 500; font-size: 1.5rem; max-width: 45%">{{review.comment}}</p>
+      <p class="text-center" style="font-weight: 500">{{ review.user }}</p>
+      <p class="text-center" style="font-weight: 400">User</p>
+    }
+  </div>
+
+  <!-- Pagination indicators -->
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <div *ngFor="let slid of reviews; let i = index" class="dot" [class.active]="i === selected" role="button" tabindex="0" (click)="goToIndex(i)" (keyup)="onKeyUp(slid)"></div>
+  </div>
+</section>

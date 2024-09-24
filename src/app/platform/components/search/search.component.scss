@@ -1,0 +1,32 @@
+.search-icon{
+  margin-left: 4px;
+}
+
+.search-filter{
+  margin-right: 8px;
+}
+
+.search-filter-dropdown {
+  top: 64px;
+  width: 95%;
+  z-index: 1000;
+  padding: 24px 24px;
+  position: absolute;
+  left: calc(100% - 100%);
+  background-color: white;
+  box-shadow: 0 15px 12px 0 rgba(0,0,0,.22), 0 19px 38px 0 rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 15px 12px 0 rgba(0,0,0,.22), 0 19px 38px 0 rgba(0,0,0,.3);
+  -moz-box-shadow: 0 15px 12px 0 rgba(0,0,0,.22), 0 19px 38px 0 rgba(0,0,0,.3);
+}
+
+.background{
+  position: fixed;
+  background: #0A0F0D;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: auto;
+}

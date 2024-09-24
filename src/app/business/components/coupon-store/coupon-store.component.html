@@ -1,0 +1,55 @@
+<div fxLayout="column" fxLayoutAlign="start center">
+  <h1>{{ 'Best ' + software.name + ' Coupon Code - August 2024'}}</h1>
+  <div fxLayout="row" fxLayoutAlign="center start">
+    <div fxFlex="20">
+      <section>
+        <h2 style="font-size: 1.8rem; font-weight: bold"> About our Software Coupon Codes </h2>
+        <p style="padding: 1.5rem 0;">{{software.description}}</p>
+        <p style="font-size: .9rem; font-weight: 400"> When you buy through links on SimplyCodes
+          <a href="/coupon/1"> we may earn a commission </a>
+          .
+        </p>
+      </section>
+      <section fxLayout="row">
+        <div>
+          <h3>{{software.availableCodes}}</h3>
+          <p>Software codes & deals available today</p>
+        </div>
+        <mat-icon class="store-icon">sell</mat-icon>
+      </section>
+      <section fxLayout="row">
+        <div>
+          <h3>{{software.verifiedSiteWideCodes}}</h3>
+          <p>Verified site-wide codes</p>
+        </div>
+        <mat-icon class="store-icon">verified</mat-icon>
+      </section>
+      <section fxLayout="row">
+        <div>
+          <h3>{{software.bestDiscountAvailable}}</h3>
+          <p>Best discount available</p>
+        </div>
+        <mat-icon class="store-icon">new_releases</mat-icon>
+      </section>
+    </div>
+    <main fxLayout="row wrap" fxFlex="70">
+      <section *ngFor="let promo of promotions.promotions" role="region" tabindex="0" style="border-radius: 2rem; max-width: 20rem">
+        <img [src]="promo.merchantData.merchantIcon" alt="merchantIcon" style="height: 240px; border-radius: 2rem; padding: 1rem 0; width: -webkit-fill-available">
+        <div fxLayout="row" fxLayoutAlign="space-between center" style="padding: 1rem 0">
+          <h4 style="padding: 0; margin: 0">{{promo.shortTitle}}</h4>
+          <button mat-raised-button fxLayout="row">
+            <mat-icon>content_copy</mat-icon>
+            <span style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis">{{promo.code}}</span>
+          </button>
+        </div>
+        <h3>{{promo.merchantData.merchantName}}</h3>
+        <p>{{promo.title}}</p>
+        <div fxLayout="row" fxLayoutAlign="space-between center" style="padding: 2rem 0">
+          <img [src]="userAvatar(promo.addedBy)" alt="added-by" style="width: 2rem; height: 2rem; border-radius: 50%">
+          <span>Worked 2 weeks ago for 3 shoppers</span>
+        </div>
+        <button style="width: 100%" mat-raised-button>copy code</button>
+      </section>
+    </main>
+  </div>
+</div>

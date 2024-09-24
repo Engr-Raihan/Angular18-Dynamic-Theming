@@ -1,0 +1,17 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="platform options picker">
+  <mat-icon role="img" aria-hidden="true">format_color_fill</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon role="img" aria-hidden="true">dialpad</mat-icon>
+    <span role="contentinfo" aria-hidden="true">Redial</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon role="img" aria-hidden="true">voicemail</mat-icon>
+    <span>Mail</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon role="img" aria-hidden="true">notifications_off</mat-icon>
+    <span>Alerts</span>
+  </button>
+</mat-menu>

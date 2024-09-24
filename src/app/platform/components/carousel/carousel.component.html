@@ -1,0 +1,24 @@
+<div fxFlex fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <button *ngIf="showNavigation" mat-icon-button class="nav-button left" (click)="previousSlide()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+
+    <div fxFlex="80" fxLayout="row" fxLayoutAlign="center center" [fxHide.lt-md]="false">
+      <div class="carousel-item" *ngFor="let slide of slides; let i = index" [hidden]="selected !== i">
+        <img [src]="slide.image" alt="Slide Image">
+        <div>{{ slide.caption }}</div>
+      </div>
+    </div>
+
+    <button *ngIf="showNavigation" mat-icon-button class="nav-button right" (click)="nextSlide()">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+
+
+  <!-- Pagination indicators -->
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <div *ngFor="let slid of slides; let i = index" class="dot" [class.active]="i === selected" role="button" tabindex="0" (click)="goToIndex(i)" (keyup)="onKeyUp(slid)"></div>
+  </div>
+</div>

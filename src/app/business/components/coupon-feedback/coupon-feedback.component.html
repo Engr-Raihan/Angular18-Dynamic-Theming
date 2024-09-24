@@ -1,0 +1,27 @@
+<div>
+  <div *ngIf="!clicked" class="flex-space-between-center feedback">
+    <h2>Save ${{coupon.DiscountPercent}}</h2>
+    <div class="flex-column">
+      <p>Last worked 1month ago</p>
+      <p>[+] show history</p>
+    </div>
+    <button mat-raised-button (click)="clicked = !clicked">
+      <span>{{coupon.CouponCode}}</span>
+    </button>
+  </div>
+
+  <div *ngIf="clicked" class="flex-space-between-center feedback">
+    <h5>Did code {{coupon.CouponCode}} work?</h5>
+    <div class="std-gap">
+      <button mat-raised-button>
+        <mat-icon>cancel</mat-icon>
+        <strong>No</strong>
+      </button>
+      <button mat-raised-button>
+        <mat-icon>check</mat-icon>
+        <strong>Yes</strong>
+      </button>
+    </div>
+  </div>
+</div>
+

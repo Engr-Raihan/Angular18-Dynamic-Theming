@@ -1,0 +1,42 @@
+<footer fxLayout="column" fxLayoutAlign="start" aria-label="contract details and copyright info">
+  <section fxLayout="column" fxLayoutAlign="start center">
+    <h1>The Planet Deals</h1>
+    <h2>the best coupon site all over the world</h2>
+  </section>
+  <section fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center">
+    <div fxLayout="column">
+      <span id="about-us">About</span>
+      @for (item of abouts; track item){
+        <a href="/" class="text-white">{{item}}</a>
+      }
+    </div>
+    <div fxLayout="column">
+      <span>Support</span>
+      @for (item of supports; track item){
+        <a href="/" class="text-white">{{item}}</a>
+      }
+    </div>
+    <div fxLayout="column">
+      <span>Resources</span>
+      @for (item of resources; track item){
+        <a href="/" class="text-white">{{item}}</a>
+      }
+    </div>
+    <div fxLayout="column">
+      <span>Pages</span>
+      @for (item of pages; track item){
+        <a href="/" class="text-white">{{item}}</a>
+      }
+    </div>
+    <div fxLayout="column">
+      <span id="contact-us">Contact</span>
+      @for (item of contacts; track item){
+        <a href="/" class="text-white">{{item}}</a>
+      }
+    </div>
+  </section>
+  <section fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center">
+    <span>© 2024 All rights reserved. We may earn a commission on the items you choose to buy.</span>
+    <span>powered by: Royal Tech</span>
+  </section>
+</footer>

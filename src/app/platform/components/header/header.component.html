@@ -1,0 +1,17 @@
+<header fxFlex="100">
+  <nav fxFlex="100" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" aria-label="Top Navbar">
+    <section fxFlex="100" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center" aria-label="Site and Navigation">
+      <img class="nav-img" role="img" aria-label="Site Logo" src="../../../../assets/images/logo.png" alt="logo">
+      <ng-container *ngFor="let Navigation of Navigations">
+        <a fxLayoutAlign="center center" [routerLink]="Navigation.Link" [fragment]="Navigation.Frag" mat-button aria-label="Site Name">
+          <img *ngIf="Navigation.Icon" class="nav-img" role="img" [src]="Navigation.Icon" [alt]="Navigation.Name">
+          <span class="nav-title" aria-label="Navigation Title" aria-hidden="true">{{Navigation.Name}}</span>
+        </a>
+      </ng-container>
+    </section>
+    <section fxFlex="100" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="end center" fxLayoutGap="2%" aria-label="Search and Setting">
+      <app-platform-search fxFill="100"></app-platform-search>
+      <app-platform-picker></app-platform-picker>
+    </section>
+  </nav>
+</header>
